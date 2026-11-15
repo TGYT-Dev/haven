@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://b1mxc2ue2nofi"]
 
-[ext_resource type="Texture2D" uid="uid://c0loa83xjnt25" path="res://assets/meowmrrp.png" id="1_pteti"]
+[ext_resource type="Script" uid="uid://b1uq4nhost2yv" path="res://cat_ball.gd" id="1_80hou"]
+[ext_resource type="Texture2D" uid="uid://bjlg4rl7evdsm" path="res://assets/meowmrrp.png" id="1_pteti"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qheeq"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_qheeq"]
 
-[node name="catBall" type="CharacterBody2D" unique_id=1670838889]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1670838889]
+script = ExtResource("1_80hou")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=344010236]
-position = Vector2(0, 36)
-shape = SubResource("WorldBoundaryShape2D_qheeq")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1831364239]
+position = Vector2(0.5, -1)
+scale = Vector2(0.95, 1)
+shape = SubResource("CircleShape2D_qheeq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=338007722]
-position = Vector2(5.9604645e-08, -105)
-scale = Vector2(0.2, 0.2)
+position = Vector2(0, 3.8146973e-06)
+scale = Vector2(0.033333335, 0.03333334)
 texture = ExtResource("1_pteti")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=164706539]

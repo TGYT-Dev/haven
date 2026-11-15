@@ -1,8 +1,8 @@
 extends Area2D
 
-var levelNum
+var levelNum = 1
 
-func _on_body_entered() -> void:
+func _on_body_entered(body: Node2D) -> void:
 	levelNum += 1
 
 func _ready() -> void:

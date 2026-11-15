@@ -1,80 +1,45 @@
-[gd_scene format=3 uid="uid://c1yh7tl5twgw3"]
+[gd_scene format=3 uid="uid://bh7pg3ey8t3c3"]
 
 [ext_resource type="Script" uid="uid://ditokv113c3pw" path="res://global.gd" id="1_jwv3a"]
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="2_dopym"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="2_ootpb"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2bfq"]
-size = Vector2(173.5, 10)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qheeq"]
+size = Vector2(300, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
-size = Vector2(8.25, 106.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dopym"]
+size = Vector2(25, 236.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y32ns"]
-size = Vector2(178.5625, 10.25)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtcfe"]
-size = Vector2(8.25, 106.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
-size = Vector2(8.25, 106.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ootpb"]
+size = Vector2(25, 74.5)
 
 [node name="Node2D" type="Node2D" unique_id=847209529]
 script = ExtResource("1_jwv3a")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1422475593]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=240539269]
+shape = SubResource("RectangleShape2D_qheeq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1585723001]
+position = Vector2(-162, -67)
+shape = SubResource("RectangleShape2D_dopym")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=825138710]
+position = Vector2(162, -107.75)
+shape = SubResource("RectangleShape2D_dopym")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1103386741]
+position = Vector2(0, -26.75)
+shape = SubResource("RectangleShape2D_ootpb")
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_ootpb")]
+position = Vector2(99, -37)
+scale = Vector2(0.05, 0.05)
+
+[node name="catBall" parent="." unique_id=1670838889 instance=ExtResource("2_dopym")]
+position = Vector2(-87, -20)
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=874969332]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1385816683]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1285888666]
-position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_p2bfq")
-
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=865046117]
-offset_left = -87.0
-offset_top = -6.0
-offset_right = 87.0
-offset_bottom = 5.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=903017828]
-position = Vector2(83, -59)
-shape = SubResource("RectangleShape2D_3d5j2")
-
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=479286603]
-offset_left = 79.0
-offset_top = -115.0
-offset_right = 90.0
-offset_bottom = 5.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1171079450]
-position = Vector2(2, -109)
-shape = SubResource("RectangleShape2D_y32ns")
-
-[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=236522974]
-offset_left = -87.0
-offset_top = -115.0
-offset_right = 87.0
-offset_bottom = -104.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=166476873]
-position = Vector2(-82, -56)
-shape = SubResource("RectangleShape2D_wtcfe")
-
-[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=1784533103]
-offset_left = -89.0
-offset_top = -115.0
-offset_right = -78.0
-offset_bottom = 5.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=451839067]
-position = Vector2(0, 3)
-shape = SubResource("RectangleShape2D_0e48y")
-
-[node name="ColorRect5" type="ColorRect" parent="StaticBody2D" unique_id=822325627]
-offset_left = -6.0
-offset_top = -51.0
-offset_right = 5.0
-offset_bottom = -1.0
-metadata/_edit_use_anchors_ = true
+position = Vector2(0, -92)
+zoom = Vector2(3.8, 3.8)
