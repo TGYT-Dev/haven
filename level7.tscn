@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://kq3wklj36fc0"]
 
+[ext_resource type="Texture2D" uid="uid://ba7u71tqp8lw2" path="res://assets/evilcube.png" id="1_3ac48"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlttd"]
 size = Vector2(62, 4)
 
@@ -35,3 +37,34 @@ shape = SubResource("RectangleShape2D_3d5j2")
 position = Vector2(18.5, -3)
 shape = SubResource("RectangleShape2D_p2bfq")
 debug_color = Color(0.90328926, 0.28186062, 0.32971093, 0.41960785)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=753736831]
+offset_left = -42.0
+offset_top = -2.0
+offset_right = 27.0
+offset_bottom = 8.0
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=1703144297]
+offset_left = -42.0
+offset_top = -18.0
+offset_right = 14.0
+offset_bottom = -14.0
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=1894871806]
+offset_left = -42.0
+offset_top = -1.0
+offset_right = 14.0
+offset_bottom = 3.0
+rotation = -1.5707964
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=1441489837]
+offset_left = 23.0
+offset_top = -1.0
+offset_right = 79.0
+offset_bottom = 3.0
+rotation = -1.5707964
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=429750390]
+position = Vector2(18.5, -3)
+scale = Vector2(0.008333332, 0.0018518519)
+texture = ExtResource("1_3ac48")
