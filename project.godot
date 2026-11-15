@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Haven"
+<<<<<<< HEAD
 run/main_scene="res://cat_ball.tscn"
+=======
+run/main_scene="uid://c1yh7tl5twgw3"
+>>>>>>> e219fa059fa8be5e8bb0579fae3c058b37df47cd
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
