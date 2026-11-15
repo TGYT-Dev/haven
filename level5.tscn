@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bvjxu00248680"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_462vi"]
-size = Vector2(173.5, 10)
+size = Vector2(168.75, 10)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0jveu"]
 size = Vector2(178.5625, 10.25)
@@ -95,7 +95,7 @@ rotation = -0.2617994
 shape = SubResource("RectangleShape2D_462vi")
 
 [node name="CollisionShape2D41" type="CollisionShape2D" parent="StaticBody2D" unique_id=895275762]
-position = Vector2(2620, 310)
+position = Vector2(2617.625, 310)
 shape = SubResource("RectangleShape2D_462vi")
 
 [node name="CollisionShape2D42" type="CollisionShape2D" parent="StaticBody2D" unique_id=1152404263]
@@ -383,13 +383,13 @@ offset_bottom = -231.96548
 [node name="ColorRect36" type="ColorRect" parent="StaticBody2D" unique_id=1946794654]
 offset_left = 1088.0
 offset_top = -243.0
-offset_right = 1262.0
+offset_right = 1204.0
 offset_bottom = -232.0
 
 [node name="ColorRect37" type="ColorRect" parent="StaticBody2D" unique_id=1395964576]
 offset_left = 1193.0
 offset_top = -77.0
-offset_right = 1367.0
+offset_right = 1358.9592
 offset_bottom = -66.0
 rotation = -1.5707964
 
@@ -444,28 +444,21 @@ rotation = -1.5707964
 
 [node name="ColorRect45" type="ColorRect" parent="StaticBody2D" unique_id=1502522154]
 offset_left = 1081.0
-offset_top = 532.0
-offset_right = 1255.0
-offset_bottom = 543.0
-rotation = -1.5707964
-
-[node name="ColorRect46" type="ColorRect" parent="StaticBody2D" unique_id=178563837]
-offset_left = 1081.0
-offset_top = 532.0
-offset_right = 1255.0
-offset_bottom = 543.0
+offset_top = 487.81888
+offset_right = 1210.8188
+offset_bottom = 498.81888
 rotation = -1.5707964
 
 [node name="ColorRect50" type="ColorRect" parent="StaticBody2D" unique_id=65644192]
 offset_left = 2698.0
 offset_top = 198.0
-offset_right = 2872.0
+offset_right = 2814.0
 offset_bottom = 209.0
 
 [node name="ColorRect51" type="ColorRect" parent="StaticBody2D" unique_id=560558005]
 offset_left = 2803.0
 offset_top = 364.0
-offset_right = 2977.0
+offset_right = 2969.0708
 offset_bottom = 375.0
 rotation = -1.5707964
 
@@ -519,9 +512,9 @@ offset_bottom = 832.0
 rotation = -1.5707964
 
 [node name="ColorRect59" type="ColorRect" parent="StaticBody2D" unique_id=245719011]
-offset_left = 2810.909
+offset_left = 2813.7332
 offset_top = 825.0
-offset_right = 2918.9692
+offset_right = 2936.767
 offset_bottom = 833.16547
 rotation = -3.1415927
 
@@ -533,9 +526,9 @@ offset_bottom = 499.0
 rotation = -3.1415927
 
 [node name="ColorRect48" type="ColorRect" parent="StaticBody2D" unique_id=123039161]
-offset_left = 1391.0
+offset_left = 1373.4637
 offset_top = 488.0
-offset_right = 1565.0
+offset_right = 1529.9275
 offset_bottom = 499.0
 rotation = -3.1415927
 
@@ -655,10 +648,10 @@ offset_right = 2709.0
 offset_bottom = 209.03448
 
 [node name="ColorRect35" type="ColorRect" parent="StaticBody2D" unique_id=2084706282]
-offset_left = 2535.0
-offset_top = 305.0345
-offset_right = 2709.0
-offset_bottom = 316.0345
+offset_left = 2528.0
+offset_top = 305.0
+offset_right = 2702.0
+offset_bottom = 316.0
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=345637868]
@@ -737,6 +730,6 @@ elipse; a circle.
 offset_left = 2515.0
 offset_top = 232.0
 offset_right = 2737.0
-offset_bottom = 333.0
+offset_bottom = 282.0
 text = "prove them wrong
 and RESTORE HARMONY!"
