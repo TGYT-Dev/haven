@@ -1,105 +1,80 @@
 [gd_scene format=3 uid="uid://c5fsu0qd5qoxk"]
 
 [ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="1_gmhuy"]
-[ext_resource type="Texture2D" uid="uid://bqia1j81hwihv" path="res://assets/fakecude.png" id="1_wh4pa"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="3_g1tnb"]
-=======
-[ext_resource type="Script" uid="uid://bt320g28801i3" path="res://sprite_2d.gd" id="2_7ln0b"]
->>>>>>> 3be39b2 (hereislsiagn)
+[ext_resource type="Texture2D" uid="uid://bqia1j81hwihv" path="res://assets/fakecude.png" id="2_g1tnb"]
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="3_pklw6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ln0b"]
-size = Vector2(173.5, 10)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
+size = Vector2(24.499842, 2)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmhuy"]
-size = Vector2(8.25, 106.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bp1i4"]
+size = Vector2(18.999683, 2)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1tnb"]
-size = Vector2(178.5625, 10.25)
+[node name="Node2D" type="Node2D" unique_id=153141856]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pklw6"]
-size = Vector2(8.25, 106.5)
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1893547401]
 
-[node name="Node2D" type="Node2D" unique_id=1411167895]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=546671391]
-
-[node name="Area2D" parent="StaticBody2D" unique_id=1451696298 instance=ExtResource("1_gmhuy")]
-position = Vector2(2.57, -19.29)
-scale = Vector2(0.045, 0.024)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=388960453]
-position = Vector2(2.9802322e-08, -16.000002)
-scale = Vector2(0.01828704, 0.01828704)
-texture = ExtResource("1_wh4pa")
-
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=29494991]
-offset_left = -87.0
-offset_top = -6.0
-offset_right = 87.0
-offset_bottom = 5.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=182630984]
-offset_left = 84.0
-offset_top = -114.0
-offset_right = 95.0
-offset_bottom = 6.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=919704435]
-offset_left = -87.0
-offset_top = -115.0
-offset_right = 87.0
-offset_bottom = -104.0
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=1355270910]
-offset_left = -94.0
-offset_top = -115.0
-offset_right = -83.0
-offset_bottom = 5.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1517255087]
-position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_7ln0b")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1628259420]
-position = Vector2(89, -56)
-shape = SubResource("RectangleShape2D_gmhuy")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1540337876]
-position = Vector2(2, -109)
-shape = SubResource("RectangleShape2D_g1tnb")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1642078068]
-position = Vector2(-87, -57)
-shape = SubResource("RectangleShape2D_pklw6")
-
-<<<<<<< HEAD
-[node name="CharacterBody2D" parent="StaticBody2D" unique_id=1670838889 instance=ExtResource("3_g1tnb")]
-position = Vector2(-67, -18)
-=======
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1575320904]
-position = Vector2(0, -16)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1520052221]
+position = Vector2(-3, 0)
 shape = SubResource("RectangleShape2D_3d5j2")
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D5" unique_id=388960453]
-position = Vector2(0.12500036, -0.12500036)
-scale = Vector2(0.01828704, 0.01828704)
-texture = ExtResource("1_wh4pa")
-script = ExtResource("2_7ln0b")
->>>>>>> 3be39b2 (hereislsiagn)
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=427904203]
+position = Vector2(-2.7500792, -17)
+shape = SubResource("RectangleShape2D_3d5j2")
 
-[node name="Label" type="Label" parent="." unique_id=1607787568]
-offset_left = -39.0
-offset_top = -58.0
-offset_right = 44.0
-offset_bottom = -35.0
-text = "hewwoo :3"
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1736259599]
+position = Vector2(9.004202, -8.499859)
+rotation = -1.5791984
+shape = SubResource("RectangleShape2D_bp1i4")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1848827682]
-position = Vector2(-2, -44)
-offset = Vector2(0, -10.78)
-zoom = Vector2(6.39, 6.39)
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1789331242]
+position = Vector2(-16, -8.499859)
+rotation = -1.5791984
+shape = SubResource("RectangleShape2D_bp1i4")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=290129324]
+offset_left = -18.0
+offset_top = -1.0
+offset_right = 11.0
+offset_bottom = 2.0
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=338117376]
+offset_left = -18.0
+offset_top = -19.0
+offset_right = 11.0
+offset_bottom = -16.0
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=1509914691]
+offset_left = 8.0
+offset_top = 0.96948814
+offset_right = 26.644028
+offset_bottom = 3.9694881
+rotation = -1.5707964
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=1591227416]
+offset_left = -18.0
+offset_top = 0.96948814
+offset_right = 0.6440277
+offset_bottom = 3.9694881
+rotation = -1.5707964
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("1_gmhuy")]
+position = Vector2(-2.585, -2.92)
+scale = Vector2(0.007, 0.003)
+
+[node name="Fakecude" type="Sprite2D" parent="." unique_id=1903645850]
+position = Vector2(-3, -2.565)
+scale = Vector2(0.0030092376, 0.0027453485)
+texture = ExtResource("2_g1tnb")
+
+[node name="Label" type="Label" parent="." unique_id=335744903]
+offset_left = -9.0
+offset_top = -10.0
+offset_right = 7.0
+offset_bottom = -4.0
+theme_override_font_sizes/font_size = 3
+text = "hewwo :3"
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("3_pklw6")]
+position = Vector2(-11.595, -3.72)
+scale = Vector2(0.18, 0.18)

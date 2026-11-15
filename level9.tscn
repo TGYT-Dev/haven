@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://coty02pv8acjx"]
+
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="1_lt823"]
+[ext_resource type="Texture2D" uid="uid://bqia1j81hwihv" path="res://assets/fakecude.png" id="2_2yery"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
+size = Vector2(301, 20)
+
+[node name="Node2D" type="Node2D" unique_id=2045643150]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2045211979]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=686317944]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=2005920188]
+position = Vector2(-1, -176)
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1713398950]
+position = Vector2(152, -60)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=163471830]
+position = Vector2(-156, -60)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1037316007]
+offset_left = -218.0
+offset_top = -11.0
+offset_right = 237.0
+offset_bottom = 29.0
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=1977841079]
+offset_left = -218.0
+offset_top = -205.0
+offset_right = 237.0
+offset_bottom = -165.0
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=506182850]
+offset_left = -186.0
+offset_top = 178.0
+offset_right = 269.0
+offset_bottom = 218.0
+rotation = -1.5707964
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=1337089713]
+offset_left = 143.0
+offset_top = 178.0
+offset_right = 598.0
+offset_bottom = 218.0
+rotation = -1.5707964
+
+[node name="Label" type="Label" parent="." unique_id=830065752]
+offset_left = -95.0
+offset_top = -112.0
+offset_right = 97.0
+offset_bottom = -63.0
+text = "yayyy you did it!
+we're all shapes after all!"
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("1_lt823")]
+position = Vector2(-71, -39)
+scale = Vector2(2.085, 2.085)
+
+[node name="Fakecude" type="Sprite2D" parent="." unique_id=1883728995]
+position = Vector2(-111, -130)
+scale = Vector2(0.0453704, 0.043055587)
+texture = ExtResource("2_2yery")
+
+[node name="Fakecude2" type="Sprite2D" parent="." unique_id=826668843]
+position = Vector2(78, -119)
+scale = Vector2(0.0453704, 0.043055587)
+texture = ExtResource("2_2yery")
+
+[node name="Fakecude5" type="Sprite2D" parent="." unique_id=105024419]
+position = Vector2(-10, -151)
+scale = Vector2(0.0453704, 0.043055587)
+texture = ExtResource("2_2yery")
+
+[node name="Fakecude3" type="Sprite2D" parent="." unique_id=1956855470]
+position = Vector2(120, -35)
+scale = Vector2(0.0453704, 0.043055587)
+texture = ExtResource("2_2yery")
+
+[node name="Fakecude4" type="Sprite2D" parent="." unique_id=113966349]
+position = Vector2(15, -39)
+scale = Vector2(0.0453704, 0.043055587)
+texture = ExtResource("2_2yery")

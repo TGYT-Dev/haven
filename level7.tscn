@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://kq3wklj36fc0"]
 
-[ext_resource type="Texture2D" uid="uid://ba7u71tqp8lw2" path="res://assets/evilcube.png" id="1_3ac48"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="1_ao7cn"]
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="2_xqg4q"]
+[ext_resource type="PackedScene" uid="uid://dd86k58boe300" path="res://evil.tscn" id="3_kuxbi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlttd"]
 size = Vector2(62, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
 size = Vector2(53, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ao7cn"]
+size = Vector2(72.5, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p2bfq"]
 size = Vector2(9, 2)
@@ -32,6 +37,10 @@ shape = SubResource("RectangleShape2D_3d5j2")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1663025357]
 position = Vector2(-13, -16)
 shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=756653586]
+position = Vector2(-3.25, -37)
+shape = SubResource("RectangleShape2D_ao7cn")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1810088645]
 position = Vector2(18.5, -3)
@@ -64,7 +73,18 @@ offset_right = 79.0
 offset_bottom = 3.0
 rotation = -1.5707964
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=429750390]
-position = Vector2(18.5, -3)
-scale = Vector2(0.008333332, 0.0018518519)
-texture = ExtResource("1_3ac48")
+[node name="Area2D" parent="StaticBody2D" unique_id=1451696298 instance=ExtResource("1_ao7cn")]
+position = Vector2(-30.235, -24.805)
+scale = Vector2(0.012, 0.012)
+
+[node name="CharacterBody2D" parent="StaticBody2D" unique_id=1670838889 instance=ExtResource("2_xqg4q")]
+position = Vector2(-29, -7)
+scale = Vector2(0.345, 0.345)
+
+[node name="Node2D" parent="." unique_id=587278249 instance=ExtResource("3_kuxbi")]
+position = Vector2(18.605, -3.135)
+scale = Vector2(0.008, 0.002)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=192778389]
+offset = Vector2(-7.515, -16.86)
+zoom = Vector2(17.635, 17.635)

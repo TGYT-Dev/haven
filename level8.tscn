@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://3qo4ex68kjcy"]
+
+[ext_resource type="PackedScene" uid="uid://dd86k58boe300" path="res://evil.tscn" id="1_hjsce"]
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="2_4xrrt"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="3_ffn4t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
+size = Vector2(5, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8w08o"]
+size = Vector2(4.5, 96)
+
+[node name="Node2D" type="Node2D" unique_id=1838368655]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1608979238]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1876725805]
+position = Vector2(-32.5, 80)
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=166446597]
+position = Vector2(35, 80)
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1754507025]
+position = Vector2(2, 169)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_8w08o")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1523565907]
+position = Vector2(0, -11)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_8w08o")
+
+[node name="Node2D" parent="StaticBody2D" unique_id=587278249 instance=ExtResource("1_hjsce")]
+position = Vector2(-21.84, 104.965)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D3" parent="StaticBody2D" unique_id=1152524928 instance=ExtResource("1_hjsce")]
+position = Vector2(-22.000002, 13.000008)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D5" parent="StaticBody2D" unique_id=1804155204 instance=ExtResource("1_hjsce")]
+position = Vector2(-28, 33.000004)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D8" parent="StaticBody2D" unique_id=359456270 instance=ExtResource("1_hjsce")]
+position = Vector2(-31, 55.000004)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D10" parent="StaticBody2D" unique_id=1628200330 instance=ExtResource("1_hjsce")]
+position = Vector2(-23, 78)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D2" parent="StaticBody2D" unique_id=1681867098 instance=ExtResource("1_hjsce")]
+position = Vector2(23.999996, 104.965)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D4" parent="StaticBody2D" unique_id=1020122087 instance=ExtResource("1_hjsce")]
+position = Vector2(23.999996, 13)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D6" parent="StaticBody2D" unique_id=2029937406 instance=ExtResource("1_hjsce")]
+position = Vector2(20.000002, 33)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D7" parent="StaticBody2D" unique_id=698598846 instance=ExtResource("1_hjsce")]
+position = Vector2(11.000001, 54)
+scale = Vector2(0.015, 0.006)
+
+[node name="Node2D9" parent="StaticBody2D" unique_id=315332000 instance=ExtResource("1_hjsce")]
+position = Vector2(19, 73)
+scale = Vector2(0.015, 0.006)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1984128257]
+offset_left = 32.0
+offset_top = -29.0
+offset_right = 61.0
+offset_bottom = 183.0
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=509267337]
+offset_left = -59.0
+offset_top = -29.0
+offset_right = -30.0
+offset_bottom = 183.0
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=495989431]
+offset_left = -37.0
+offset_top = 167.0
+offset_right = 40.0
+offset_bottom = 185.0
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=332302857]
+offset_left = -38.0
+offset_top = -26.0
+offset_right = 39.0
+offset_bottom = -8.0
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("2_4xrrt")]
+position = Vector2(2, 2.75)
+scale = Vector2(0.49, 0.49)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1020491980]
+zoom = Vector2(13.65, 13.65)
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("3_ffn4t")]
+position = Vector2(5.49, 140.51)
+scale = Vector2(0.105, 0.04)
