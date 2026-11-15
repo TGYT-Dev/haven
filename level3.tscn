@@ -15,7 +15,7 @@ size = Vector2(326.28125, 10.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qrujo"]
 size = Vector2(8.25, 106.5)
 
-[node name="Node2D" type="Node2D" unique_id=1893363240]
+[node name="Node2D2" type="Node2D" unique_id=1893363240]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1984410694]
 

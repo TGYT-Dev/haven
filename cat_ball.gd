@@ -10,6 +10,10 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_grounded = false
 
 func _physics_process(delta):
+	
+	if is_zero_approx(velocity.y):
+		velocity.y = 0 
+	
 	# 1. Apply gravity if not on the ground
 	if not is_grounded:
 		velocity.y += gravity * delta
@@ -18,7 +22,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED * 0.2)
 
 	# 2. Handle jump when grounded
-	if Input.is_action_just_pressed("ui_accept") and is_grounded:
+	if Input.is_action_just_pressed("ui_accept") and abs(velocity.y) < 80:
 		velocity.y = JUMP_VELOCITY
 		is_grounded = false
 
