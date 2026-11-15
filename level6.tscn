@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://1v1vilpoqbaa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hwst"]
+size = Vector2(119, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bkn1p"]
+size = Vector2(53, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
+size = Vector2(9, 9)
+
+[node name="Node2D" type="Node2D" unique_id=729934919]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1459603799]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2104522079]
+position = Vector2(20.5, 0)
+shape = SubResource("RectangleShape2D_7hwst")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=861518512]
+position = Vector2(81, -25)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_bkn1p")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1941979124]
+position = Vector2(-40, -23)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_bkn1p")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1058580723]
+position = Vector2(4, -6)
+shape = SubResource("RectangleShape2D_3d5j2")

@@ -2,7 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="1_gmhuy"]
 [ext_resource type="Texture2D" uid="uid://bqia1j81hwihv" path="res://assets/fakecude.png" id="1_wh4pa"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="3_g1tnb"]
+=======
+[ext_resource type="Script" uid="uid://bt320g28801i3" path="res://sprite_2d.gd" id="2_7ln0b"]
+>>>>>>> 3be39b2 (hereislsiagn)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ln0b"]
 size = Vector2(173.5, 10)
@@ -73,8 +77,20 @@ shape = SubResource("RectangleShape2D_g1tnb")
 position = Vector2(-87, -57)
 shape = SubResource("RectangleShape2D_pklw6")
 
+<<<<<<< HEAD
 [node name="CharacterBody2D" parent="StaticBody2D" unique_id=1670838889 instance=ExtResource("3_g1tnb")]
 position = Vector2(-67, -18)
+=======
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1575320904]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_3d5j2")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D5" unique_id=388960453]
+position = Vector2(0.12500036, -0.12500036)
+scale = Vector2(0.01828704, 0.01828704)
+texture = ExtResource("1_wh4pa")
+script = ExtResource("2_7ln0b")
+>>>>>>> 3be39b2 (hereislsiagn)
 
 [node name="Label" type="Label" parent="." unique_id=1607787568]
 offset_left = -39.0
