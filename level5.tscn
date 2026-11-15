@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://bvjxu00248680"]
 
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="1_4wg22"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="2_t4tfv"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_462vi"]
 size = Vector2(168.75, 10)
 
@@ -733,3 +736,14 @@ offset_right = 2737.0
 offset_bottom = 282.0
 text = "prove them wrong
 and RESTORE HARMONY!"
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("1_4wg22")]
+position = Vector2(-45, -28)
+scale = Vector2(1.805, 1.805)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=882518626]
+zoom = Vector2(4.565, 4.565)
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_t4tfv")]
+position = Vector2(2756, 766)
+scale = Vector2(0.08, 0.08)

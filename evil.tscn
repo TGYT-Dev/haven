@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dd86k58boe300"]
+
+[ext_resource type="Texture2D" uid="uid://ba7u71tqp8lw2" path="res://assets/evilcube.png" id="1_i3aud"]
+[ext_resource type="Script" uid="uid://5qyc35r8xvqe" path="res://kill.gd" id="1_v62bw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qheeq"]
+size = Vector2(1061, 1041)
+
+[node name="Node2D" type="Node2D" unique_id=587278249]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1861663720]
+script = ExtResource("1_v62bw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2058579283]
+position = Vector2(-7.5, 11.5)
+shape = SubResource("RectangleShape2D_qheeq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=642384151]
+texture = ExtResource("1_i3aud")

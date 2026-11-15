@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://c5fsu0qd5qoxk"]
 
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="1_gmhuy"]
 [ext_resource type="Texture2D" uid="uid://bqia1j81hwihv" path="res://assets/fakecude.png" id="1_wh4pa"]
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="3_g1tnb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7ln0b"]
 size = Vector2(173.5, 10)
@@ -14,11 +16,18 @@ size = Vector2(178.5625, 10.25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pklw6"]
 size = Vector2(8.25, 106.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3d5j2"]
-
 [node name="Node2D" type="Node2D" unique_id=1411167895]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=546671391]
+
+[node name="Area2D" parent="StaticBody2D" unique_id=1451696298 instance=ExtResource("1_gmhuy")]
+position = Vector2(2.57, -19.29)
+scale = Vector2(0.045, 0.024)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=388960453]
+position = Vector2(2.9802322e-08, -16.000002)
+scale = Vector2(0.01828704, 0.01828704)
+texture = ExtResource("1_wh4pa")
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=29494991]
 offset_left = -87.0
@@ -64,14 +73,8 @@ shape = SubResource("RectangleShape2D_g1tnb")
 position = Vector2(-87, -57)
 shape = SubResource("RectangleShape2D_pklw6")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1575320904]
-position = Vector2(0, -16)
-shape = SubResource("RectangleShape2D_3d5j2")
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D5" unique_id=388960453]
-position = Vector2(0.12500036, -0.12500036)
-scale = Vector2(0.01828704, 0.01828704)
-texture = ExtResource("1_wh4pa")
+[node name="CharacterBody2D" parent="StaticBody2D" unique_id=1670838889 instance=ExtResource("3_g1tnb")]
+position = Vector2(-67, -18)
 
 [node name="Label" type="Label" parent="." unique_id=1607787568]
 offset_left = -39.0
@@ -79,3 +82,8 @@ offset_top = -58.0
 offset_right = 44.0
 offset_bottom = -35.0
 text = "hewwoo :3"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1848827682]
+position = Vector2(-2, -44)
+offset = Vector2(0, -10.78)
+zoom = Vector2(6.39, 6.39)
