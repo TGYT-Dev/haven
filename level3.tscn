@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://cfk872mkxpjma"]
 
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="1_o2ccw"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="2_qrujo"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm5k8"]
 size = Vector2(323.75, 10)
 
@@ -123,3 +126,14 @@ offset_top = 1.0
 offset_right = 7.4793396
 offset_bottom = 25.0
 rotation = -1.5707964
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("1_o2ccw")]
+position = Vector2(-48, -18)
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_qrujo")]
+position = Vector2(203.99998, -29.999998)
+scale = Vector2(0.045, 0.045)
+
+[node name="Camera2D" type="Camera2D" parent="Area2D" unique_id=327331108]
+position = Vector2(-2844.444, -533.3334)
+zoom = Vector2(3.785, 3.785)
