@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://c1yh7tl5twgw3"]
 
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="1_wtcfe"]
+
 [node name="Node2D" type="Node2D" unique_id=842867846]
+
+[node name="catBall" parent="." unique_id=1670838889 instance=ExtResource("1_wtcfe")]

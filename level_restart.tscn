@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ct5a4rlw16ir5"]
+
+[ext_resource type="Script" uid="uid://1e3fbtq21m0s" path="res://area_2d.gd" id="1_ef1mh"]
+
+[sub_resource type="GDScript" id="GDScript_ef1mh"]
+
+[node name="Area2D" type="Area2D" unique_id=1451696298]
+script = ExtResource("1_ef1mh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1822302349]
+script = SubResource("GDScript_ef1mh")

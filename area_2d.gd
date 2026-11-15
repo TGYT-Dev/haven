@@ -1,11 +1,10 @@
 extends Area2D
 
+var levelNum
 
-# Called when the node enters the scene tree for the first time.
+func _on_body_entered() -> void:
+	levelNum += 1
+
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	if not self.body_entered.is_connected(_on_body_entered):
+		self.body_entered.connect(_on_body_entered)
