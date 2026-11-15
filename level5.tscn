@@ -95,7 +95,7 @@ rotation = -0.2617994
 shape = SubResource("RectangleShape2D_462vi")
 
 [node name="CollisionShape2D41" type="CollisionShape2D" parent="StaticBody2D" unique_id=895275762]
-position = Vector2(2617.625, 310)
+position = Vector2(2617, 310)
 shape = SubResource("RectangleShape2D_462vi")
 
 [node name="CollisionShape2D42" type="CollisionShape2D" parent="StaticBody2D" unique_id=1152404263]
@@ -617,7 +617,7 @@ rotation = -0.2617994
 [node name="ColorRect30" type="ColorRect" parent="StaticBody2D" unique_id=450577303]
 offset_left = 2210.0
 offset_top = 240.03448
-offset_right = 2384.0
+offset_right = 2375.0
 offset_bottom = 251.03448
 
 [node name="ColorRect31" type="ColorRect" parent="StaticBody2D" unique_id=892525288]
@@ -630,15 +630,15 @@ metadata/_edit_use_anchors_ = true
 [node name="ColorRect32" type="ColorRect" parent="StaticBody2D" unique_id=1064112617]
 offset_left = 2366.0
 offset_top = 349.03455
-offset_right = 2540.0
+offset_right = 2539.9436
 offset_bottom = 360.03455
 rotation = -0.2617994
 
 [node name="ColorRect33" type="ColorRect" parent="StaticBody2D" unique_id=1311630840]
-offset_left = 2366.0
-offset_top = 242.03452
-offset_right = 2540.0
-offset_bottom = 253.03452
+offset_left = 2372.1165
+offset_top = 240.3956
+offset_right = 2539.7842
+offset_bottom = 251.3956
 rotation = -0.2617994
 
 [node name="ColorRect34" type="ColorRect" parent="StaticBody2D" unique_id=543783484]
@@ -648,10 +648,10 @@ offset_right = 2709.0
 offset_bottom = 209.03448
 
 [node name="ColorRect35" type="ColorRect" parent="StaticBody2D" unique_id=2084706282]
-offset_left = 2528.0
-offset_top = 305.0
-offset_right = 2702.0
-offset_bottom = 316.0
+offset_left = 2534.0
+offset_top = 304.0
+offset_right = 2708.0
+offset_bottom = 315.0
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=345637868]
