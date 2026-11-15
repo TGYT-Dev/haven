@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b1mxc2ue2nofi"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qheeq"]
+
+[node name="catBall" type="CharacterBody2D" unique_id=1670838889]
+motion_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=344010236]
+position = Vector2(0, 36)
+shape = SubResource("WorldBoundaryShape2D_qheeq")
