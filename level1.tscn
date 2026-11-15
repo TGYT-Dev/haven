@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://bh7pg3ey8t3c3"]
 
-[ext_resource type="Script" uid="uid://ditokv113c3pw" path="res://global.gd" id="1_jwv3a"]
 [ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="2_dopym"]
 [ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="2_ootpb"]
 
@@ -14,7 +13,6 @@ size = Vector2(25, 360.5)
 size = Vector2(25, 74.5)
 
 [node name="Node2D" type="Node2D" unique_id=847209529]
-script = ExtResource("1_jwv3a")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1422475593]
 
@@ -65,13 +63,13 @@ offset_bottom = 246.0
 scale = Vector2(0.63659275, -6.760406)
 color = Color(0, 0, 0, 1)
 
-[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_ootpb")]
-position = Vector2(99, -37)
-scale = Vector2(0.05, 0.05)
-
-[node name="catBall" parent="." unique_id=1670838889 instance=ExtResource("2_dopym")]
-position = Vector2(-87, -20)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=874969332]
 position = Vector2(0, -92)
 zoom = Vector2(3.8, 3.8)
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("2_dopym")]
+position = Vector2(-90, -20)
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_ootpb")]
+position = Vector2(80, -32)
+scale = Vector2(0.04, 0.04)

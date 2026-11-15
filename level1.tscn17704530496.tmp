@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bh7pg3ey8t3c3"]
+
+[ext_resource type="PackedScene" uid="uid://b1mxc2ue2nofi" path="res://cat_ball.tscn" id="2_dopym"]
+[ext_resource type="PackedScene" uid="uid://ct5a4rlw16ir5" path="res://level_restart.tscn" id="2_ootpb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qheeq"]
+size = Vector2(300, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dopym"]
+size = Vector2(25, 360.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ootpb"]
+size = Vector2(25, 74.5)
+
+[node name="Node2D" type="Node2D" unique_id=847209529]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1422475593]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=240539269]
+shape = SubResource("RectangleShape2D_qheeq")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1585723001]
+position = Vector2(-162, -67)
+shape = SubResource("RectangleShape2D_dopym")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=825138710]
+position = Vector2(162, -169.75)
+shape = SubResource("RectangleShape2D_dopym")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1103386741]
+position = Vector2(0, -26.75)
+shape = SubResource("RectangleShape2D_ootpb")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=759744819]
+offset_left = -175.0
+offset_top = -10.0
+offset_right = -135.0
+offset_bottom = 30.0
+scale = Vector2(8.76, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D" unique_id=1938691216]
+offset_left = -175.0
+offset_top = -10.0
+offset_right = -135.0
+offset_bottom = 30.0
+scale = Vector2(0.63659275, -6.760406)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D" unique_id=197482367]
+offset_left = 150.0
+offset_top = -8.0
+offset_right = 190.0
+offset_bottom = 32.0
+scale = Vector2(0.63659275, -6.760406)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D" unique_id=508376428]
+offset_left = -13.000001
+offset_top = 206.0
+offset_right = 27.0
+offset_bottom = 246.0
+scale = Vector2(0.63659275, -6.760406)
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=874969332]
+position = Vector2(0, -92)
+zoom = Vector2(3.8, 3.8)
+
+[node name="CharacterBody2D" parent="." unique_id=1670838889 instance=ExtResource("2_dopym")]
+position = Vector2(-90, -20)
+
+[node name="Area2D" parent="." unique_id=1451696298 instance=ExtResource("2_ootpb")]
+position = Vector2(80, -32)
+scale = Vector2(0.04, 0.04)
